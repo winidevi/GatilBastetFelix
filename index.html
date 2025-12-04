@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BastetFelix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.felix-removebg-preview.png" alt="Logo BastetFelix" class="logo">
+
+        <!-- Botão hamburguer (mobile) -->
+        <button class="menu-btn" id="menuBtn">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#" class="active" data-page="inicio">Início</a></li>
+                <li><a href="#" data-page="servicos">Serviços</a></li>
+                <li><a href="#" data-page="sobre">Sobre Nós</a></li>
+                <li><a href="#" data-page="contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Botão Dark Mode -->
+        <button id="darkModeBtn" class="dark-mode-button">🌙</button>
+    </header>
+
+    <main>
+        <section id="inicio" class="page active">
+            <h1>Bem-vindo ao lar dos pelados!</h1>
+            <p>Descubra o encanto dos gatos Sphynx...</p>
+            <h2>Nossos primeiros Sphynx</h2>
+            <h3>Anakin & Halsey</h3>
+            <img src="img/piueanakim.jpeg" alt="">
+        </section>
+
+        <section id="servicos" class="page">
+            <h1>Nossos Serviços</h1>
+            <ul>
+                <li>Venda de filhotes Sphynx</li>
+                <li>Consultoria em cuidados com gatos sem pelos</li>
+                <li>Serviços de saúde e bem-estar para gatos Sphynx</li>
+            </ul>
+            <button id="onclick">RESERVE SEU FILHOTE AQUI</button>
+        </section>
+
+        <section id="sobre" class="page">
+            <h1>Sobre Nós</h1>
+            <p>
+                Bem-vindo ao Bastet Felix, um gatil dedicado à criação responsável e amorosa de gatos da raça Sphynx.
+                Localizado em um ambiente acolhedor e familiar, nosso objetivo é proporcionar aos nossos felinos o
+                melhor
+                cuidado possível, garantindo que cada filhote cresça saudável, feliz e bem socializado.
+            </p>
+
+
+            <h3>Nossa História </h3>
+
+            <p>
+
+                Desde a infância, os felinos fazem parte da minha vida. Sempre existiu em mim um amor genuíno pelos
+                animais, principalmente pelos gatos, que cresceu ao longo dos anos através de resgates, cuidados,
+                dedicação e muito carinho. Cada vida que passou por minhas mãos reforçou ainda mais a certeza de que
+                cuidar é um dom, uma missão que carrego comigo desde sempre.
+
+                Por muito tempo, acompanhei pela internet uma raça que despertava algo diferente no meu coração. Mesmo
+                sem nunca ter convivido de perto com ela, eu já sentia uma conexão especial. Lia sobre seu
+                comportamento, suas características, sua personalidade encantadora… e tudo o que diziam só aumentava meu
+                desejo. Até que um dia, ouvi o que o coração já vinha dizendo há muito tempo: é essa a raça que eu quero
+                criar.
+
+                Quando finalmente pude conviver com ela de perto, tive a certeza de que todas as expectativas eram
+                pequenas diante da realidade. O temperamento doce, a beleza singular e a forma de se relacionar com as
+                pessoas superaram tudo o que eu imaginava.
+
+                Movida por esse amor e pelo compromisso com o bem-estar animal, decidi seguir também o caminho da
+                Medicina Veterinária, para estar cada vez mais próxima dos cuidados, da saúde e da qualidade de vida dos
+                meus gatos. Meu propósito sempre foi claro: criar com responsabilidade, respeito, amor e conhecimento.
+
+                Hoje, o meu gatil nasce desse sonho construído ao longo de toda uma vida. Aqui, cada gato é tratado como
+                parte da família. Nosso trabalho é guiado pelo amor, pelo cuidado individual, pela busca da melhor
+                genética, da melhor saúde e, acima de tudo, pelo compromisso de entregar às famílias não apenas um
+                filhote, mas um companheiro de vida criado com ética, carinho e responsabilidade.</p>
+        </section>
+
+        <section id="contato" class="page">
+    <h1>Contato</h1>
+
+    <form id="contactForm">
+        <div class="input-box">
+            <input type="text" id="nome" required>
+            <label for="nome">Seu Nome</label>
+        </div>
+
+        <div class="input-box">
+            <input type="email" id="email" required>
+            <label for="email">Seu Email</label>
+        </div>
+
+        <div class="input-box">
+            <textarea id="mensagem" rows="4" required></textarea>
+            <label for="mensagem">Digite sua mensagem...</label>
+        </div>
+
+        <button type="submit" class="btn-send">Enviar Mensagem</button>
+    </form>
+</section>
+
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bastet Felix | Todos os direitos reservados.</p>
+        <h3>Usamos e Recomendamos:</h3>
+        <img src="img/formula.webp" class="logo">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
