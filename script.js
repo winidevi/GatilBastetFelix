@@ -39,7 +39,7 @@ menuBtn.addEventListener("click", () => {
 const darkBtn = document.getElementById("darkModeBtn");
 const body = document.body;
 
-// Verifica modo salvo no localStorage
+// Verifica preferência anterior
 if (localStorage.getItem("darkmode") === "on") {
     body.classList.add("dark");
     darkBtn.textContent = "☀️";
@@ -48,7 +48,7 @@ if (localStorage.getItem("darkmode") === "on") {
 darkBtn.addEventListener("click", () => {
     body.classList.toggle("dark");
 
-    // Troca ícone
+    // Troca de ícone e salva preferência
     if (body.classList.contains("dark")) {
         darkBtn.textContent = "☀️";
         localStorage.setItem("darkmode", "on");
@@ -62,13 +62,23 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     let nome = document.getElementById("nome").value;
-    let email = document.getElementById("email").value;
+    let emailUsuario = document.getElementById("email").value;  // <-- e-mail do cliente
     let mensagem = document.getElementById("mensagem").value;
 
-    let texto = `Olá! Meu nome é ${nome}%0AEmail: ${email}%0AMensagem:%0A${mensagem}`;
-    let numero = "5511976082166"; // seu número configurado
+    let emailDestino = "bastetfelix455@gmail.com"; // email do destinatário
 
+    let texto = 
+        `Olá! Meu nome é ${nome}%0A` +
+        `Email: ${emailUsuario}%0A` +
+        `Mensagem:%0A${mensagem}`;
+
+    let numero = "5511976082166"; // WhatsApp do destinatário
+
+    // Enviar para WhatsApp
     window.open(`https://wa.me/${numero}?text=${texto}`, "_blank");
+
+    // Enviar para e-mail
+    window.open(`mailto:${emailDestino}?subject=Contato%20via%20site&body=${texto}`, "_blank");
 });
-// -------- FORMULÁRIO VIA WHATSAPP --------
+
 

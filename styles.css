@@ -1,4 +1,4 @@
-/* RESET E CONFIGURAÇÃO GLOBAL */
+/* RESET E ESTILIZAÇÕES GERAIS */ 
 * {
     margin: 0;
     padding: 0;
@@ -171,7 +171,7 @@ main img:hover {
     transform: scale(1.02);
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #3e3b3c;
     margin-bottom: 15px;
     text-align: center;
@@ -195,6 +195,12 @@ section p {
     font-size: 20px;
     line-height: 1.7;
     max-width: 900px;
+}
+section ul, ol {
+    max-width: 900px;
+    margin: 15px auto 20px;
+    font-size: 20px;
+    line-height: 1.7;
 }
 
 /* BOTÃO PADRÃO */
@@ -273,6 +279,25 @@ footer img.logo {
     width: 90px;
     margin: 10px auto 0;
 }
+footer p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #fdfcfa;
+
+
+}
+footer h3, h4 {
+    margin: 15px 0 10px;
+    color: #bbb9b1;
+}
+footer .instagram-icon {
+    margin-top: -5px;
+    transition: transform 0.3s;
+}
+footer .instagram-icon:hover {
+    transform: scale(1.1);
+}
+
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
@@ -403,4 +428,58 @@ body.dark .input-box label {
 .btn-send:hover {
     background: #2b292a;
     transform: scale(1.03);
+}
+
+iframe {
+    display: flex;
+    margin: 20px auto;
+    border-radius: 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+
+}
+/* Container dos cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Card individual */
+.card {
+    background-color: #fff4e6;
+    border: 2px solid #f2c94c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card h3 {
+    color: #d67e00;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Efeito hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
