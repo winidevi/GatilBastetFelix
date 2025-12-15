@@ -41,7 +41,7 @@ header img.logo {
 
 /* BOTÃO MODO ESCURO */
 .dark-mode-button {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     background: none;
@@ -50,6 +50,7 @@ header img.logo {
     color: white;
     cursor: pointer;
     transition: transform 0.3s;
+
 }
 
 .dark-mode-button:hover {
