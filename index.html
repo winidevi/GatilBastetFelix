@@ -7,6 +7,8 @@
     <title>🐾BastetFelix</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="img/logo.felix-removebg-preview.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,14 +37,14 @@
     </header>
 
     <main>
-        <section id="inicio" class="page active">
+        <section id="inicio" class="page active"  data-aos="fade-up">
             <h1>🐾Bem-vindo ao lar dos pelados!</h1>
 
             <h2>Nossos primeiros Sphynx</h2>
             <h3>Anakin & Halsey</h3>
             <img src="img/piu-kim.jpeg" alt="Sphynx Anakin e Halsey" height="500" width="300">
 
-            <div class="inicio-cards">
+            <div class="inicio-cards" data-aos="fade-up">
                 <h2>🐾 Curiosidades sobre os Sphynx</h2>
                 <div class="cards-container">
                     <div class="card">
@@ -90,7 +92,7 @@
             </iframe>
             </div>
         </section>
-        <section id="servicos" class="page">
+        <section id="servicos" class="page"  data-aos="fade-up">
             <h1>🐾Nossos Serviços</h1>
             <ul>
                 <li>Venda de filhotes Sphynx</li>
@@ -102,7 +104,7 @@
                 <button id="onclick">RESERVE SEU FILHOTE AQUI</button>
             </a>
         </section>
-        <section id="galeria" class="page">
+        <section id="galeria" class="page"  data-aos="fade-up">
             <h1>🐾Mamães & Papais</h1>
             <h2>Fêmeas</h2>
             <div class="gallery">
@@ -123,7 +125,7 @@
                 </div>
         </section>
 
-        <section id="filhotesDisponiveis" class="page">
+        <section id="filhotesDisponiveis" class="page"  data-aos="fade-up">
 
             <h1>🐾Filhotes Disponiveis</h1>
             <h2>Papai & Mamãe</h2>
@@ -155,7 +157,7 @@
             <img src="img/sphynx/filhotes disponiveis/gatinho5.png" alt="Lindão do pai" height="400" width="400">
         </section>
 
-        <section id="reserva e valor" class="page">
+        <section id="reserva e valor" class="page"  data-aos="fade-up">
             <h1>🐾Reserva & Valor</h1>
             <p>O valor de um filhote de Sphynx pode variar de acordo com cor e sexo, pois algumas combinações são mais
                 raras e, portanto, mais valorizadas.</p>
@@ -314,7 +316,7 @@
                 alegria ao lar.
                 Com amor, cuidado e respeito, vocês construirão uma convivência maravilhosa por muitos anos.
         </section>
-        <section id="sobre" class="page">
+        <section id="sobre" class="page"  data-aos="fade-up">
             <h1>🐾Sobre Nós</h1>
             <p>
                 Bem-vindo ao Bastet Felix, um gatil dedicado à criação responsável e amorosa de gatos da raça
@@ -361,7 +363,7 @@
                 filhote, mas um companheiro de vida criado com ética, carinho e responsabilidade.</p>
         </section>
 
-        <section id="contato" class="page">
+        <section id="contato" class="page"  data-aos="fade-up">
             <h1>🐾Contato</h1>
 
             <form id="contactForm">
@@ -402,6 +404,14 @@
     </footer>
 
     <script src="script.js"></script>
+    <a href="https://wa.me/5511976082166" target="_blank" class="whatsapp-float">
+        💬
+    </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+
 </body>
 
 </html>
